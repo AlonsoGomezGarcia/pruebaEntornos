@@ -16,7 +16,7 @@ public class GestorTareas {
         siguienteId++;
     }
 
-    public List<Tarea> obtenTareas(){
+    public List<Tarea> obtenerTareas(){
         return tareas;
     }
 
