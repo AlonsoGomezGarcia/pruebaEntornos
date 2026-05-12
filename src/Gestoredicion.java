@@ -1,7 +1,7 @@
-public class GestorEdicion {
+public class Gestoredicion {
     private GestorTareas gestorTareas;
 
-    public GestorEdicion(GestorTareas gestorTareas) {
+    public Gestoredicion(GestorTareas gestorTareas) {
         this.gestorTareas = gestorTareas;
     }
 
