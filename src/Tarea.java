@@ -3,14 +3,14 @@ public class Tarea {
     private String titulo;
     private String descripcion;
     private boolean completada;
-
+    //CONSTRUCTOR
     public Tarea(int id, String titulo, String descripcion, boolean completada) {
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.completada = completada;
     }
-
+    //GETTERS Y SETTERS
     public int getId() {
         return id;
     }
@@ -35,16 +35,16 @@ public class Tarea {
     public void setCompletada(boolean completada) {
         this.completada = completada;
     }
-
+    //METODO VOID PARA MARCAR COMO COMPLETADA
     public void marcarComoCompletada() {
             this.completada = true;
         }
-
+    //METODO VOID PARA MODIFICAR DATOS
     public void modificarDatos(String nuevoTitulo, String nuevaDescripcion){
         this.titulo = nuevoTitulo;
         this.descripcion = nuevaDescripcion;
     }
-
+    // HASHCODE
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -55,7 +55,7 @@ public class Tarea {
         result = prime * result + (completada ? 1231 : 1237);
         return result;
     }
-
+    //EQUALS
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -81,9 +81,7 @@ public class Tarea {
             return false;
         return true;
     }
-
-    
-
+    //TO STRING
     @Override
     public String toString() {
         return "Tarea [id=" + id + ", titulo=" + titulo + ", descripcion=" + descripcion + ", completada=" + completada
